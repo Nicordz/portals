@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f2d6fd;
+    overflow: hidden;
+}
+header {
+    background-color: #361126;
+    color: rgb(250, 226, 248);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+}
+@font-face{
+  font-family: Lemon;
+  src: url(Lemon.ttf);
+}
+
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/************ 
+//-------------------------------
+// CABECERA
+//-------------------------------
+************/
+#main-header {
+	background: #422f3c;
+	color: rgba(36, 12, 43, 0.473);
+	height: 80px;
+	
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+}	
+	#main-header a {
+		color: white;
+	}
+	
+	
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 5px  15px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #b9acbe;
+	}
+	
+	#logo-header .site-name {
+        font-family: Lemon;
+		display: block;
+		font-weight: 650;
+		font-size: 3em;
+	}
+	
+
+	
+    nav {
+        float: right;
+    }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            padding-right: 90px;
+        }
+        
+            nav ul li {
+                display: inline-block;
+                line-height: 80px;
+            }
+                
+                nav ul li a {
+                    font-family: Lemon;
+                    font-size: 2em;
+                    display: block;
+                    padding: 0 30px;
+                    text-decoration: none;
+                }
+                
+                    nav ul li a:hover {
+                        background: #9a8ba1;
+                    }
+
+
+  
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    background: #503f3f;
+    box-shadow: 0 30px 50px #352c2c;
+}
+
+.container .slide .item{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide .item:nth-child(3){
+    left: 65%;
+}
+.slide .item:nth-child(4){
+    left: calc(65% + 220px);
+}
+.slide .item:nth-child(5){
+    left: calc(65% + 440px);
+}
+
+/* here n = 0, 1, 2, 3,... */
+.slide .item:nth-child(n + 6){
+    left: calc(65% + 660px);
+    opacity: 0;
+}
+
+
+
+.item .content{
+    position: absolute;
+    top: 60%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    color: #110b0f;
+    transform: translate(0, -50%);
+    font-family: system-ui;
+    display: none;
+}
+
+
+
+.slide .item:nth-child(2) .content{
+    display: block;
+}
+
+
+.content .name{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.content .des{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+.content button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+
+
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+
+
+.button{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.button button{
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background: #ababab;
+    color: #fff;
+}

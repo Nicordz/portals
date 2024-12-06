@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Gus Gus</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">INTERESES</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PROYECTOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="https://www.tiktok.com/@nick_gjr?_t=8roRszZSBcd&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/share/19oHS9SqJF/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/charlie_frdz/profilecard/?igsh=YjJnODlnNndxa3lp"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Joselyn Rod</span>, Animador Digital</h2>
+                <p class="descripcion">Podras conocer mas sobre mi y mis trabajos hechos a lo largo de mi quinto semestre </p>
+                <a href="#portfolio">Ir a Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/jeje.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Joselyn Rod</span> </h2>
+            <h3>Animador Digital</h3>
+            <p>Soy un estudiante del plantel CECyTEM Chimalhuacan II de la carrera tecnica Animacion Digital.</p>
+            <p>Tengo 17 años de edad,soy una persona divertida, amable, trabajadora, feliz y respetuosa. Puedo adaptarme facilmente a cualquier tipo de trabajo que tenga que ver con mi carrera o algo relacionado.</p>
+            <p>Me gusta trabajar cosas que se relacionan a la ilustracion o dibujo, presentaciones y videos </p>
+        </div>
+    </section>
+
+    <!-- SECCION I N T E R E S E S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS INTERESES</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-palette"></i></span>
+                <ul class="servicios-tag">
+                    <li>Dibujo</li>
+                </ul>            
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-headphones"></i></span>
+                <ul class="servicios-tag">
+                    <li>Musica</li>
+                </ul>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-brush"></i></span>
+                <ul class="servicios-tag">
+                    <li>Pintura</li>
+                </ul>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-cube"></i></span>
+                <ul class="servicios-tag">
+                    <li>3D</li>
+                </ul>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-book"></i></span>
+                <ul class="servicios-tag">
+                    <li>Lectura</li>
+                </ul>
+            </div>
+        </div>
+
+ 
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html & Css</p>
+                <span class="porcentaje">75%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Modelos 3D</p>
+                <span class="porcentaje">88%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Dibujos</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Edicion de imagenes</p>
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PROYECTO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+        
+                <a href="mundos.html"><img src="img/5.png" alt=""></a>
+                <div class="info">
+                    <h4>Mundos Virtuales</h4>
+                    <p>Dale click para que veas mis trabajos en blender</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="web.html"><img src="img/4.png" alt=""></a>
+                <div class="info">
+                    <h4>Paginas Web</h4>
+                    <p>Dale click para que veas las multiples paginas que he hecho</p>
+                </div>
+            </div>
+            
+    </section>
+
+<!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="https://formsubmit.co/rodnicolas85@gmail.com"method="POST">
+                    <input type="name" name="name" placeholder="Tú Nombre">
+                    <input type="email" name="email" placeholder="Dirección de correo">
+                    <input type="text" name="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                    </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30105.993604973617!2d-98.9708353!3d19.4016359!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e313bfdacf69%3A0xea1c81a6935eb711!2sGuerrero%20Chimalli!5e0!3m2!1ses-419!2smx!4v1732337236651!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Av. Bordo de Xochiaca S/N, Tlatelco, 56353 Chimalhuacán, Méx.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 56 5234 4209 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: rodnicolas85@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Candystudios</p>
+        <div class="redes">
+            <a href="https://www.tiktok.com/@nick_gjr?_t=8roRszZSBcd&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/share/19oHS9SqJF/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/charlie_frdz/profilecard/?igsh=YjJnODlnNndxa3lp"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
